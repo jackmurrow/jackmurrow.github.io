@@ -5,13 +5,13 @@
 
     <div class="w3-right">
       <a href="{{ '/' | relative_url }}"
-         class="w3-bar-item w3-button">Home</a>
+         class="w3-bar-item w3-button {% if page.url == '/' %}w3-light-grey{% endif %}">Home</a>
 
       <a href="{{ '/projects/' | relative_url }}"
-         class="w3-bar-item w3-button">Projects</a>
+         class="w3-bar-item w3-button {% if page.url == '/projects/' %}w3-light-grey{% endif %}">Projects</a>
 
       <a href="{{ '/cv/' | relative_url }}"
-         class="w3-bar-item w3-button">CV</a>
+         class="w3-bar-item w3-button {% if page.url == '/cv/' %}w3-light-grey{% endif %}">CV</a>
     </div>
   </div>
 </div>
